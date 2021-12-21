@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span>1-2-3</span>
+        <h1>Web Designe</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="liHome"><a href="#home">Home</a></li>
+          <li class="liAbout"><a href="#about">About</a></li>
+          <li class="liServise"><a href="#service">Servise</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="grid-container" id="cv-grid-list-page"></div>
+      <div class="cvPage hiden" id="cv-page">
+        <div class="personImg">
+          <img id="personImg" src="" alt="img" width="200px" height="200px" />
+        </div>
+        <div class="firstName"></div>
+        <div class="lastName"></div>
+        <div class="phone"></div>
+        <div class="email"></div>
+        <div class="education"></div>
+        <div class="workExperience"></div>
+        <div class="trainings"></div>
+        <div class="imagePath"></div>
+      </div>
+    </div>
+    <div class="about hiden" id="about-page">
+      <h1>We use html Css and javascript</h1>
+    </div>
+    <div class="servise hiden" id="service-page">
+      <main>
+        <section>
+          <h1>Contact Us</h1>
+          <div class="forma">
+            <form action="#" class="form">
+              <h2>Contact Us</h2>
+              <input type="text" name="fname" class="inp" />
+              <div class="mail">Email Address</div>
+              <input type="email" name="mail" class="inp" />
+              <div class="mess">Message</div>
+              <textarea
+                name=""
+                id="textarea"
+                placeholder="Your message..."
+              ></textarea>
+              <br />
+              <input type="submit" value="Send" class="sub" />
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="addNew hiden" id="add-new-cv-page">
+      <form class="new-member" id="new-member">
+        <div>
+          <label for="name-field">Name</label>
+          <input name="firstName" type="text" id="name-field" placeholder="" />
+        </div>
+        <div>
+          <label for="lastName-field">LastName</label>
+          <input name="lastName"  type="text" id="lastName-field" placeholder="" />
+        </div>
+        <div>
+          <label for="phone-field">Phone</label>
+          <input name="phone" type="text" id="phone-field" placeholder="" />
+        </div>
+        <div>
+          <label for="email-field">Email</label>
+          <input name="email" type="text" id="email-field" placeholder="" />
+        </div>
+        <div>
+          <label for="education-field">Education</label>
+          <input name="education"  type="text"  id="education-field"  placeholder="" />
+        </div>
+        <div>
+          <label for="workExperience-field">WorkExperience</label>
+          <input  name="workExperience" type="text" id="workExperience-field"  placeholder="" />
+        </div>
+        <div>
+          <label for="trainings-field">Trainings</label>
+          <input  name="trainings" type="text" id="trainings-field"  placeholder="" />
+        </div>
+      </form>
+      <button class="add-new-user" id="new-member-submit">Add</button>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
